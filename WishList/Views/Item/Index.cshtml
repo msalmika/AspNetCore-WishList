@@ -11,7 +11,8 @@
 <ul>
     @foreach (WishList.Models.Item item in Model)
     {
-        <li>@item.Description</li>
+        <li>@item.Description
         <a asp-action="delete" asp-route="@item.Id">delete</a>
+        </li>
     }
 </ul>
