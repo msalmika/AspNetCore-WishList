@@ -9,7 +9,7 @@
 <h1>Wishlist</h1>
 <a asp-action="create">Add item</a>
 <ul>
-    @foreach (var item in Model)
+    @foreach (WishList.Models.Item item in Model)
     {
         <li>@item.Description</li>
         <a asp-action="delete" asp-route="@item.Id">delete</a>
