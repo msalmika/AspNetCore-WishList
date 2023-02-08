@@ -31,6 +31,7 @@ namespace WishList
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+                //Adding a comment to check that git works
             }
             app.UseRouting();
             app.UseEndpoints(endpoints => { endpoints.MapDefaultControllerRoute(); });
